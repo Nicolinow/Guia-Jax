@@ -1,6 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;500;600;700&display=swap');
-@import url('https://db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=BeaufortforLOL-Bold');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@font-face {
+    font-family: 'beaufort_for_lolbold';
+    src: url('./Beaufort/beaufortforlol-bold-webfont.woff2') format('woff2'),
+         url('./Beaufort/beaufortforlol-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'spiegelregular';
+    src: url('./Spigel/spiegel_tt_regular-webfont.woff2') format('woff2'),
+         url('./Spigel/spiegel_tt_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'beaufort_for_lolbold_italic';
+    src: url('./Beaufort/beaufortforlol-bolditalic-webfont.woff2') format('woff2'),
+         url('./Beaufort/beaufortforlol-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 :root{
     --bg-color: rgb(18, 18, 18);
     --primary-color: rgb(29, 29, 29);
@@ -148,8 +170,7 @@ html{
     user-select: none;
     margin: 0 0 2rem 0;
     font-size: 6rem;
-    font-weight: 600;
-    font-family: 'BeaufortforLOL-Bold', sans-serif;
+    font-family: 'beaufort_for_lolbold',sans-serif;
     text-transform: capitalize;
     color: rgba(var(--secondary-color), 1);
     text-shadow: 0 0 5px rgba(var(--secondary-color), 0.6), 0 0 10px rgba(var(--secondary-color), 0.516) , 0 0 15px rgba(var(--secondary-color), 0.4), 0 0 20px rgba(var(--secondary-color), 0.216), 0 0 30px rgba(var(--secondary-color), 0.316), 0 0 40px rgba(var(--secondary-color), 0.216), 0 0 50px rgba(var(--secondary-color), 0.416);
@@ -262,14 +283,16 @@ label:hover{
 }
 .button__text{
     position: relative;
+    font-family: 'beaufort_for_lolbold', sans-serif;
     top: -5rem;
     transition: all 1s;
     text-shadow: 0 0 12px rgba(var(--alternative-color), 0.3), 0 0 10px rgba(var(--alternative-color), 0.3);
 }
 .button__text2{ 
     position: relative;
+    font-family: 'beaufort_for_lolbold', sans-serif;
     transition: all 1s;
-    top: -4.59rem;
+    top: -4.29rem;
 }
 #button:checked + label > .button__text{
     color: var(--primary-color);
@@ -330,14 +353,16 @@ label:hover{
 }
 .button__text1-1{
     position: relative;
+    font-family: 'beaufort_for_lolbold', sans-serif;
     top: -5rem;
     transition: all 1s;
     text-shadow: 0 0 12px rgba(var(--alternative-color), 0.3), 0 0 10px rgba(var(--alternative-color), 0.3);
 }
 .button__text2-2{ 
     position: relative;
+    font-family: 'beaufort_for_lolbold', sans-serif;
     transition: all 1s;
-    top: -4.59rem;
+    top: -4.39rem;
 }
 #menu__toggle:checked + label > .button__text1-1{
     color: var(--primary-color);
@@ -410,6 +435,7 @@ label:hover{
     white-space: nowrap;
     transform: translate(0, -150%);
     opacity: 0;
+    font-family: 'spiegelregular', sans-serif;
     font-size: clamp(0.5rem, 1vw, 0.8rem);
     width:fit-content;
     transition: color 0.4s, opacity 0.5s, transform 0.7s;
@@ -497,7 +523,7 @@ label:hover{
     letter-spacing: -0.087em;
     font-weight: bold;
     font-style: italic;
-    font-family:'BeaufortforLOL-Bold';
+    font-family:'beaufort_for_lolbold';
     color: rgba(var(--secondary-color), 0.562);
     text-shadow: 0 0 15px rgba(255,255,255,.4), 0 0 10px rgba(255,255,255,.7), 1px 1px 2px #000000;
     pointer-events: none;
@@ -534,10 +560,11 @@ h6{
 
 }
 .description__title{
-    font-family:'Poppins', sans-serif;
+    font-family:'beaufort_for_lolbold',sans-serif;
     font-weight: 900;
     border-bottom: 1px rgba(var(--secondary-color), 0.690) solid;
     letter-spacing: 0.07rem;
+    text-shadow: 0 0 6px rgba(255,255,255,.4), 0 0  10px rgba(255,255,255,.5);
     color: rgba(var(--secondary-color), 0.690);
     font-size: 1.2rem;
     width: 94%;
@@ -576,10 +603,12 @@ h6{
 .primary__runes__name-{
     width: 100%;
     font-size: 0.9rem;
+    font-family: 'beaufort_for_lolbold', sans-serif;
     font-weight: 600;
 }
 .primary__runes__name{
     width: 11ch;
+    font-family: 'spiegelregular';
     text-align: center;
 }
 .primary__runes__icons{
@@ -626,6 +655,9 @@ h6{
     align-items: center;
     text-align: center;
 }
+.secondary__runes__name{
+    font-family: 'spiegelregular';
+}
 .secondary__runes__icons{
     width: 2rem;
 }
@@ -658,6 +690,7 @@ h6{
 .stats__name{
     height: 5rem;
     width:10ch;
+    font-family: 'spiegelregular';
     text-align: center;
 }
 .stats__runes__icons{
@@ -700,6 +733,7 @@ h6{
 .item__name{
     text-align: center;
     font-size: 0.54rem;
+    font-family: 'spiegelregular';
     font-weight: 200;
     letter-spacing: 0.03rem;
 }
@@ -746,7 +780,7 @@ h6{
     font-weight: 800;
     font-size: 2.5rem;
     letter-spacing: -0.1rem;
-    font-family: 'BeaufortforLOL-Bold', sans-serif;
+    font-family: 'beaufort_for_lolbold_italic', sans;
     margin-left: 1rem;
     padding: 0;
     transition: 1s all 1s;
@@ -761,7 +795,7 @@ h6{
 
 }
 .difficulty{
-    font-family: 'BeaufortforLOL-Bold';
+    font-family: 'beaufort_for_lolbold',sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
 }
@@ -777,7 +811,7 @@ h6{
     width: 1.5rem;
 }
 .difficulty__type{
-    font-family: 'BeaufortforLOL-Bold';
+    font-family: 'beaufort_for_lolbold',sans-serif;
     margin-top: 0.3rem;
     font-size: 0.8rem;
     font-weight: 300;
