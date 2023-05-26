@@ -601,15 +601,18 @@ h6{
     font-weight: 400;
 }
 .primary__runes__name-{
+    text-shadow: 0 0 6px rgba(255,255,255,.4), 0 0  10px rgba(255,255,255,.5);
     width: 100%;
     font-size: 0.9rem;
     font-family: 'beaufort_for_lolbold', sans-serif;
     font-weight: 600;
 }
 .primary__runes__name{
+    letter-spacing: 0.05rem;
     width: 11ch;
     font-family: 'spiegelregular';
     text-align: center;
+    
 }
 .primary__runes__icons{
     width: 4rem;
@@ -901,8 +904,8 @@ input:checked + label + .cards__section > .card > .card__image + .card__title + 
 input:checked + label + .cards__section > .card > .card__image + .card__title + .card__description > .runes > .runes__primary{
     transform: translate(0,0);
     transition: 1s all;
-    color: rgba(var(--secondary-color), 0.562);
-    text-shadow: 0 0 6px rgba(255,255,255,.4), 0 0 10px rgba(255,255,255,.5);
+    color: rgba(var(--secondary-color), 0.662);
+    text-shadow: 0 0 6px rgba(255,255,255,.2), 0 0 10px rgba(255,255,255,.2);
 }
 
 
@@ -927,12 +930,13 @@ input:checked + label + .cards__section > .card > .card__image + .card__title + 
 }
 @media screen and (max-width:977px) {
     .cards__section{
-        transition: margin-top 1s;
+        transition: margin-top 1s 0.4s;
     }
     #menu__toggle:checked ~ .cards__section{
         margin-top: 22rem;
         transition: margin-top 1s;
     }
+
 }
 @media screen and (max-width:866px) {
     #menu__toggle:checked + label + div + input + label{
@@ -1036,7 +1040,6 @@ input:checked + label + .cards__section > .card > .card__image + .card__title + 
     }
     .cards__section{
         margin-top: 4rem;
-        transition: margin-top 1s;
     }
     #menu__toggle:checked ~ .cards__section{
         margin-top: 25rem;
@@ -1454,7 +1457,6 @@ input:checked + label + .cards__section > .card > .card__image + .card__title + 
         background: linear-gradient(180deg, rgba(113,113,113,0.2) 0%, rgba(18,18,18,1) 95%);
         opacity: 1;
     }
-
 
 }
 @media screen and (max-width:430px) {
